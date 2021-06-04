@@ -30,10 +30,10 @@ function countUp(event) {
         // click.load();
         paan.play();
     }
-    else {
-        // click.load();
-        click.play();
-    }
+    // else {
+    //     // click.load();
+    //     click.play();
+    // }
 };
 
 const logDiv = document.querySelector<HTMLElement>('#log');
@@ -45,6 +45,7 @@ swiper.on('slideNextTransitionEnd', () => {
     const count = parseInt(finishButton.innerHTML);
     const valLog = String(count) + ', ';
     logDiv.innerHTML = logDiv.innerHTML + valLog;
+    click.play()
 });
 
 swiper.on('reachEnd', () => {
