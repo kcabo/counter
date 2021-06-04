@@ -13,7 +13,8 @@ const option = {
 
 const swiper = new Swiper('.mySwiper', option);
 
-const bgm1 = document.querySelector("audio");  
+const click = document.querySelector<HTMLAudioElement>("#click");  
+const paan = document.querySelector<HTMLAudioElement>("#paan");  
 
 
 const buttons = document.querySelectorAll<HTMLElement>('.swiper-slide');
@@ -22,8 +23,12 @@ buttons.forEach((button) => {
         const valstr = button.innerHTML;
         const val  = parseInt(valstr) + 1;
         button.innerHTML = String(val);
-        if (val % 5 == 0){
-            bgm1.play();
+        if (val % 10 == 0){
+            paan.load();
+            paan.play();
+        } else {
+            click.load();
+            click.play();
         }
     })
 });
