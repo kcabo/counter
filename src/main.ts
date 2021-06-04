@@ -27,7 +27,7 @@ function countUp(event) {
     const val = parseInt(event.currentTarget.innerHTML) + 1;
     event.currentTarget.innerHTML = String(val);
     if (val % 5 == 0){
-        click.load();
+        // click.load();
         click.play();
     }
     // else {
