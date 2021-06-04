@@ -2,6 +2,7 @@ import Swiper from 'swiper/bundle';
 
 import './style.scss';
 
+
 const direction: "vertical" | "horizontal" = "vertical";
 const option = {
     direction: direction,
