@@ -26,14 +26,14 @@ buttons.forEach((button) => {
 function countUp(event) {
     const val = parseInt(event.currentTarget.innerHTML) + 1;
     event.currentTarget.innerHTML = String(val);
-    if (val % 5 == 0){
+    if (val % 10 == 0){
+        // click.load();
+        paan.play();
+    }
+    else {
         // click.load();
         click.play();
     }
-    // else {
-    //     click.load();
-    //     click.play();
-    // }
 };
 
 const logDiv = document.querySelector<HTMLElement>('#log');
