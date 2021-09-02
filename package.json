@@ -1,7 +1,5 @@
 {
-  "name": "bookmark-file-prettify",
-  "version": "1.2.0",
-  "description": "Apply styles to your NETSCAPE-Bookmark-files",
+  "name": "counter",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
@@ -11,7 +9,7 @@
   },
   "author": "kcabo",
   "license": "MIT",
-  "homepage": "https://github.com/kcabo/bookmark-file-prettify",
+  "private" : true,
   "dependencies": {
     "swiper": "^6.7.0"
   },
